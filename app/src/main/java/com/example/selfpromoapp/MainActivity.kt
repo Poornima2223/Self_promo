@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         val spinnerValues: Array<String> = arrayOf("title1", "title2", "title3")
         val spinnerAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, spinnerValues)
         val jobInfo : String  = jobInfoSpinner?.onItemSelectedListener.toString()
-        jobInfoSpinner.adapter = spinnerAdapter
+        jobInfoSpinner?.adapter = spinnerAdapter
 
 
 
